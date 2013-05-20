@@ -1,0 +1,31 @@
+{
+  "name": "dalek-browser-phantomjs",
+  "version": "0.0.1",
+  "description": "PhantomJS binding for DalekJS",
+  "main": "./index.js",
+  "dependecies": {
+    "phantomjs": "1.9.x"
+  },
+  "repository": {
+      "type": "git",
+      "url": "http://github.com/dalekjs/dalek-browser-phantomjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dalekjs/dalek-browser-phantomjs/issues"
+  },
+  "keywords": ["dalekjs", "phantomjs"],
+  "author": {
+    "name": "Sebastian Golasch",
+    "email": "public@asciidisco.com",
+    "url": "http://asciidisco.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dalekjs/dalek-browser-phantomjs/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engine": {
+    "node": ">=0.8"
+  }
+}
