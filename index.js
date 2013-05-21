@@ -24,6 +24,6 @@ module.exports = {
 	    return deferred.promise;
 	},
 	kill: function () {
-		this.spawned.kill('SIGHUP');
+		this.spawned.kill('SIGTERM');
 	}
 };
