@@ -127,10 +127,10 @@ module.exports = function (grunt) {
   });
 
   // prepare files & folders for grunt:plato & coverage
-  grunt.registerTask('prepare', function () {
+  grunt.registerTask('preparePlato', function () {
     var fs = require('fs');
 
-    var platoDummyFolders = ['coverage', 'report', 'report/coverage', 'report/complexity', 'report/complexity/files', 'report/complexity/files/test', 'report/complexity/files/index_js'];
+    var platoDummyFolders = ['report', 'report/coverage', 'report/complexity', 'report/complexity/files', 'report/complexity/files/test', 'report/complexity/files/index_js'];
     var platoDummyFiles = ['/report/complexity/report.history.json', '/report/complexity/files/report.history.json', '/report/complexity/files/index_js/report.history.json'];
 
     // loopy loop
@@ -144,17 +144,35 @@ module.exports = function (grunt) {
 
     // generate dirs for docs & reports
     platoDummyFolders.forEach(function (path) {
-      fs.mkdirSync(__dirname + '/' + path);
+      if (!fs.existsSync(__dirname + '/' + path)) {
+        fs.mkdirSync(__dirname + '/' + path);
+      }
     });
 
     // store some dummy reports, so that grunt plato doesnt complain
     platoDummyFiles.forEach(function (file) {
-      fs.writeFileSync(__dirname + file, '{}');
+      if (!fs.existsSync(__dirname + file)) {
+        fs.writeFileSync(__dirname + file, '{}');
+      }
+    });
+  });
+
+  // prepare files & folders for coverage
+  grunt.registerTask('prepareCoverage', function () {
+    var fs = require('fs');
+
+    // generate folders
+    ['coverage', 'report', 'report/coverage'].forEach(function (folder) {
+      if (!fs.existsSync(__dirname + '/' + folder)) {
+        fs.mkdirSync(__dirname + '/' + folder);
+      }
     });
 
     // generate code coverage helper file
-    var coverageHelper = 'require("blanket")({pattern: require("fs").realpathSync(__dirname + "/../index.js")});';
-    fs.writeFileSync(__dirname + '/coverage/blanket.js', coverageHelper);
+    var coverageHelper = 'require("blanket")({pattern: [require("fs").realpathSync(__dirname + "/../index.js"), require("fs").realpathSync(__dirname + "/../lib/")]});';
+    if (!fs.existsSync(__dirname + '/coverage/blanket.js')) {
+      fs.writeFileSync(__dirname + '/coverage/blanket.js', coverageHelper);
+    }
   });
 
   // generates a coverage badge
