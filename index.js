@@ -30,8 +30,13 @@ var spawn = require('child_process').spawn;
 var phantomjs = require('phantomjs');
 
 /**
- * @module PhantomJSDriver
+ * PhantomJS Driver base class
+ *
+ * @module DalekJS
  * @class PhantomJSDriver
+ * @namespace Browser
+ * @part PhantomJS
+ * @api
  */
 
 var PhantomJSDriver = {
