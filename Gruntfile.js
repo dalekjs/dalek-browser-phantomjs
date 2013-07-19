@@ -15,8 +15,12 @@ module.exports = function (grunt) {
       src: ['index.js']
     },
 
-    // clean coverage helper file
-    clean: ['coverage', 'report', 'report.zip'],
+    // clean automatically generated helper files & docs
+    clean: {
+      coverage: ['coverage', 'report/coverage'],
+      report: ['report/complexity', 'report/api', 'report/docs'],
+      reportZip: ['report.zip']
+    },
 
     // linting
     jshint: {
