@@ -20,7 +20,8 @@ It provides all a WebDriverServer & browser launcher for phantomjs, used by Dale
 
 ## Ressources
 
-[API Documentation](http://dalekjs.com/package/dalek-browser-phantomjs/master/api/index.html) -
+[API Docs](http://dalekjs.com/package/dalek-browser-phantomjs/master/api/index.html) -
+[Trello](https://trello.com/b/UjcpWj7v/dalek-browser-phantomjs) -
 [Code coverage](http://dalekjs.com/package/dalek-browser-phantomjs/master/coverage/index.html) -
 [Code complexity](http://dalekjs.com/package/dalek-browser-phantomjs/master/complexity/index.html) -
 [Contributing](https://github.com/dalekjs/dalek-browser-phantomjs/blob/master/CONTRIBUTING.md) -
