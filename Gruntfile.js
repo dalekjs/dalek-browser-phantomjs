@@ -98,7 +98,12 @@ module.exports = function (grunt) {
       options: {
         header: 'dalekjs/dalekjs.com/master/assets/header.html',
         footer: 'dalekjs/dalekjs.com/master/assets/footer.html',
-        target: 'report/docs'
+        target: 'report/docs',
+        vars: {
+          title: 'DalekJS - Documentation - Browser - PhantomJS',
+          desc: 'DalekJS - Documentation - Browser - PhantomJS',
+          docs: true
+        }
       },
       src: ['index.js']
     },

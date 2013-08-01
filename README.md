@@ -13,11 +13,6 @@ dalek-browser-phantomjs
 
 [![NPM](https://nodei.co/npm/dalek-browser-phantomjs.png)](https://nodei.co/npm/dalek-browser-phantomjs/)
 
-## Warning
-
-This module is a browser plugin for [DalekJS](https://github.com/dalekjs/dalek).
-It provides all a WebDriverServer & browser launcher for phantomjs, used by DalekJS.
-
 ## Ressources
 
 [API Docs](http://dalekjs.com/package/dalek-browser-phantomjs/master/api/index.html) -
@@ -28,6 +23,25 @@ It provides all a WebDriverServer & browser launcher for phantomjs, used by Dale
 [User Docs](http://dalekjs.com/docs/phantomjs.html) -
 [Homepage](http://dalekjs.com) -
 [Twitter](http://twitter.com/dalekjs)
+
+## Docs
+This module is a browser plugin for [DalekJS](//github.com/dalekjs/dalek).
+It provides a browser launcher as well the PhantomJS browser itself.
+
+The browser plugin comes bundled with the DalekJS base framework.
+
+You can use the browser plugin beside others (it is the default)
+by adding a config option to the your Dalekfile:
+
+```js
+"browsers": ["phantomjs", "chrome"]
+```
+
+Or you can tell Dalek that it should test in this & another browser via the command line:
+
+```
+$ dalek mytest.js -b phantomjs,chrome
+```
 
 ## Help Is Just A Click Away
 
