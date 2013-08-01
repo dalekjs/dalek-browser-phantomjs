@@ -12,6 +12,7 @@ dalek-browser-phantomjs
 [![unstable](https://rawgithub.com/hughsk/stability-badges/master/dist/unstable.svg)](http://github.com/hughsk/stability-badges)
 
 [![NPM](https://nodei.co/npm/dalek-browser-phantomjs.png)](https://nodei.co/npm/dalek-browser-phantomjs/)
+[![NPM](https://nodei.co/npm-dl/dalek-browser-phantomjs.png)](https://nodei.co/npm/dalek-browser-phantomjs/)
 
 ## Ressources
 
@@ -76,7 +77,7 @@ requests that implement the feature).
 other, better channels for seeking assistance, like StackOverflow and the
 Google Groups mailing list.
 
-![DalekJS](https://raw.github.com/dalekjs/dalekjs.com/master/img/logo.jpg)
+![DalekJS](https://raw.github.com/dalekjs/dalekjs.com/master/img/logo.png)
 
 ## Legal FooBar (MIT License)
 
