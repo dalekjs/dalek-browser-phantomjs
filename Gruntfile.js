@@ -121,6 +121,20 @@ module.exports = function (grunt) {
       }
     },
 
+    // up version, tag & commit
+    bump: {
+      options: {
+        files: ['package.json'],
+        commit: true,
+        commitMessage: 'Release v%VERSION%',
+        commitFiles: ['package.json'],
+        createTag: true,
+        tagName: '%VERSION%',
+        tagMessage: '%VERSION%',
+        push: true
+      }
+    },
+
     // compress artifacts
     compress: {
       main: {
