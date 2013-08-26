@@ -150,6 +150,9 @@ var PhantomJSDriver = {
       if (stream.search('GhostDriver - Main - running') !== -1) {
         deferred.resolve();
       }
+      else if (stream.search('Could not start Ghost Driver') !== -1) {
+        deferred.reject('Could not start Ghost Driver');
+      }
     });
     return deferred.promise;
   },
