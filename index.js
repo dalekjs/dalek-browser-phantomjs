@@ -142,7 +142,7 @@ var PhantomJSDriver = {
   launch: function () {
     var deferred = Q.defer();
     var stream = '';
-    this.spawned = spawn(phantomjs.path, ['--webdriver', '9001']);
+    this.spawned = spawn(phantomjs.path, ['--webdriver', this.getPort()]);
 
     this.spawned.stdout.on('data', function (data) {
       var dataStr = data + '';
