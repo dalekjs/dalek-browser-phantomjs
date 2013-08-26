@@ -99,7 +99,7 @@ var PhantomJSDriver = {
    * @default /wd/hub
    */
 
-	path: '/wd/hub',
+  path: '/wd/hub',
 
   /**
    * Child process instance of the PhantomJS browser
@@ -108,7 +108,7 @@ var PhantomJSDriver = {
    * @type null|Object
    */
 
-	spawned: null,
+  spawned: null,
 
   /**
    * Resolves the driver port
@@ -139,9 +139,9 @@ var PhantomJSDriver = {
    * @return Q.promise
    */
 
-	launch: function () {
-		var deferred = Q.defer();
-		var stream = '';
+  launch: function () {
+    var deferred = Q.defer();
+    var stream = '';
     this.spawned = spawn(phantomjs.path, ['--webdriver', '9001']);
 
     this.spawned.stdout.on('data', function (data) {
@@ -152,7 +152,7 @@ var PhantomJSDriver = {
       }
     });
     return deferred.promise;
-	},
+  },
 
   /**
    * Kills the PhantomJSDriver processe
@@ -161,9 +161,9 @@ var PhantomJSDriver = {
    * @chainable
    */
 
-	kill: function () {
-		this.spawned.kill('SIGTERM');
-	}
+  kill: function () {
+    this.spawned.kill('SIGTERM');
+  }
 };
 
 module.exports = PhantomJSDriver;
