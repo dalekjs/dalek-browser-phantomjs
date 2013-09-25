@@ -298,7 +298,7 @@ var PhantomJSDriver = {
     var binary = this._checkUserDefinedBinary(this.configuration, phantomjs.path);
 
     // launch the browser process
-    this.spawned = spawn(binary, ['--webdriver', this.getPort()]);
+    this.spawned = spawn(binary, ['--webdriver', this.getPort(), '--ignore-ssl-errors=true']);
     this.spawned.stdout.on('data', this._launch.bind(this, deferred));
     return this;
   },
