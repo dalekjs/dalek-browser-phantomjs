@@ -4,37 +4,40 @@
   "description": "PhantomJS binding for DalekJS",
   "main": "./index.js",
   "dependencies": {
-    "phantomjs": "~1.9.2-0",
-    "q": "~0.9.7",
-    "portscanner": "~0.1.3"
+    "phantomjs": "~1.9.7-1",
+    "q": "~1.0.0",
+    "portscanner": "~0.2.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.3",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-yuidoc": "~0.5.0",
-    "grunt-contrib-compress": "~0.5.1",
-    "grunt-mocha-test": "~0.6.3",
-    "grunt-complexity": "~0.1.3",
-    "grunt-plato": "~0.2.1",
-    "grunt-documantix": "~0.0.3",
-    "grunt-include-replace": "~1.1.0",
-    "grunt-conventional-changelog": "~1.0.0",
-    "grunt-concurrent": "~0.3.1",    
-    "grunt-bump": "~0.0.11",
-    "load-grunt-tasks": "~0.1.0",
-    "time-grunt": "~0.1.1",    
-    "blanket": "~1.1.5",
-    "chai": "~1.7.2"
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-yuidoc": "~0.5.1",
+    "grunt-contrib-compress": "~0.7.0",
+    "grunt-mocha-test": "~0.9.4",
+    "grunt-complexity": "~0.1.4",
+    "grunt-plato": "~1.0.0",
+    "grunt-documantix": "~0.0.4",
+    "grunt-include-replace": "~1.2.0",
+    "grunt-conventional-changelog": "~1.1.0",
+    "grunt-concurrent": "~0.5.0",
+    "grunt-bump": "~0.0.13",
+    "load-grunt-tasks": "~0.4.0",
+    "time-grunt": "~0.2.10",
+    "blanket": "~1.1.6",
+    "chai": "~1.9.0"
   },
   "repository": {
-      "type": "git",
-      "url": "http://github.com/dalekjs/dalek-browser-phantomjs.git"
+    "type": "git",
+    "url": "http://github.com/dalekjs/dalek-browser-phantomjs.git"
   },
   "bugs": {
     "url": "https://github.com/dalekjs/dalek-browser-phantomjs/issues"
   },
-  "keywords": ["dalekjs", "phantomjs"],
+  "keywords": [
+    "dalekjs",
+    "phantomjs"
+  ],
   "author": {
     "name": "Sebastian Golasch",
     "email": "public@asciidisco.com",
