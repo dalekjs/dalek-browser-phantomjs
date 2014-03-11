@@ -1,7 +1,7 @@
 dalek-browser-phantomjs
 =======================
 
-> DalekJS browser plugin for Google Chrome
+> DalekJS browser plugin for PhantomJS
 
 [![Build Status](https://travis-ci.org/dalekjs/dalek-browser-phantomjs.png)](https://travis-ci.org/dalekjs/dalek-browser-phantomjs)
 [![Build Status](https://drone.io/github.com/dalekjs/dalek-browser-phantomjs/status.png)](https://drone.io/github.com/dalekjs/dalek-browser-phantomjs/latest)
@@ -10,6 +10,9 @@ dalek-browser-phantomjs
 [![NPM version](https://badge.fury.io/js/dalek-browser-phantomjs.png)](http://badge.fury.io/js/dalek-browser-phantomjs)
 [![Coverage](http://dalekjs.com/package/dalek-browser-phantomjs/master/coverage/coverage.png)](http://dalekjs.com/package/dalek-browser-phantomjs/master/coverage/index.html)
 [![unstable](https://rawgithub.com/hughsk/stability-badges/master/dist/unstable.svg)](http://github.com/hughsk/stability-badges)
+[![Stories in Ready](https://badge.waffle.io/dalekjs/dalek-browser-chrome.png?label=ready)](https://waffle.io/dalekjs/dalek-browser-chrome)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dalekjs/dalek-browser-phantomjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 [![NPM](https://nodei.co/npm/dalek-browser-phantomjs.png)](https://nodei.co/npm/dalek-browser-phantomjs/)
 [![NPM](https://nodei.co/npm-dl/dalek-browser-phantomjs.png)](https://nodei.co/npm/dalek-browser-phantomjs/)
@@ -84,8 +87,3 @@ Google Groups mailing list.
 Copyright (c) 2013 Sebastian Golasch
 
 Distributed under [MIT license](https://github.com/dalekjs/dalek-browser-phantomjs/blob/master/LICENSE-MIT)
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dalekjs/dalek-browser-phantomjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
