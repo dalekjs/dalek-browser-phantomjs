@@ -10,7 +10,7 @@ dalek-browser-phantomjs
 [![NPM version](https://badge.fury.io/js/dalek-browser-phantomjs.png)](http://badge.fury.io/js/dalek-browser-phantomjs)
 [![Coverage](http://dalekjs.com/package/dalek-browser-phantomjs/master/coverage/coverage.png)](http://dalekjs.com/package/dalek-browser-phantomjs/master/coverage/index.html)
 [![unstable](https://rawgithub.com/hughsk/stability-badges/master/dist/unstable.svg)](http://github.com/hughsk/stability-badges)
-[![Stories in Ready](https://badge.waffle.io/dalekjs/dalek-browser-chrome.png?label=ready)](https://waffle.io/dalekjs/dalek-browser-chrome)
+[![Stories in Ready](https://badge.waffle.io/dalekjs/dalek-browser-phantomjs.png?label=ready)](https://waffle.io/dalekjs/dalek-browser-phantomjs)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dalekjs/dalek-browser-phantomjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
